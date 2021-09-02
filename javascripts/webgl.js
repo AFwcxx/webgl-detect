@@ -5,6 +5,7 @@ class WebGl {
     let _this = this;
 
     this.fingerprint = false;
+    this.hash = false;
     this.canvas = false;
     this.agent = navigator.userAgent;
     this.resolve = false;
@@ -113,7 +114,11 @@ class WebGl {
 
       this.sha256(img_fingerprint).then(hash => {
         _this.fingerprint = hash;
-        _this.resolve(true);
+
+        this.sha256(hash + this.agent).then(hash => {
+          _this.hash = hash;
+          _this.resolve(true);
+        })
       });
     }
     catch (err) {

@@ -7,5 +7,6 @@ $(document).ready(function () {
     $('#agent').append(webgl.agent);
     $('#webgl-fingerprint').append(webgl.fingerprint);
     $('#canvas').append(webgl.canvas);
+    $('#hash').append(webgl.hash);
   });
 });
