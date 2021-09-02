@@ -1,6 +1,6 @@
 # WebGL canvas fingerprint
 
-WebGL canvas fingprint algorithm implementation in JavaScript.
+WebGL canvas fingerprint algorithm implementation in JavaScript.
 
 Run the index.html in browser.
 
