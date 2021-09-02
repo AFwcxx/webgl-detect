@@ -3,18 +3,59 @@
   <head>
     <title>WebGL Detector</title>
 
+    <link rel="stylesheet" href="stylesheets/index.css">
     <script src="javascripts/jquery.js"></script>
   </head>
   <body>
 
-    <p><b>Agent:</b> <span id="agent"></span></p>
+    <div>
+      <p><b>Agent:</b> <span id="agent"></span></p>
 
-    <div id="canvas"></div>
+      <div id="canvas"></div>
 
-    <p><b>WebGL Fingerprint:</b> <span id="webgl-fingerprint"></span></p>
+      <p><b>WebGL Fingerprint:</b> <span id="webgl-fingerprint"></span></p>
 
-    <p><b>Hash:</b> <span id="hash"></span></p>
+      <p><b>Hash:</b> <span id="hash"></span></p>
+    </div>
 
+    <br>
+
+    <h3>Info:</h3>
+    <table id="table-info">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Detected</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <br>
+
+    <h3>Params:</h3>
+    <table id="table-params">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Detected</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <br>
+
+    <h3>Functions:</h3>
+    <table id="table-functions">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Detected</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
 
     <script src="javascripts/webgl.js"></script>
     <script src="javascripts/index.js"></script>
